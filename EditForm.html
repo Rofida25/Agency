@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Edit Form</title>
+    <link href="Css/StyleEdit.css" rel="stylesheet" type="text/css">
+    <script src="js/ActionEdit.js"></script> 
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user">
+                <div class="formBx">
+                <form method="post" action="php/signform.php">
+                    <h2>Edit a data</h2>
+                    <input type="text" name="username" placeholder="Username"  />
+                    <input type="password" name="password" placeholder="Password" />
+                    <div class="button"> 
+                        <input onclick="document.getElementById('del').style.display='block'" type="submit" name="delete" value="Delete"/>
+                        <input  type="submit" name="updatewin" value="Update"/>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <!--
+    <div id="del" class="modal">
+        <span onclick="document.getElementById('del').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" method="post" action="php/signform.php">
+          <div class="container">
+            <h2>Delete Account</h2>
+            <p>Are you sure you want to delete your account?</p>
+            <div class="clearfix">
+              <button onclick="window.location.href='file:EditForm.html';" type="button" class="cancelbtn">Cancel</button>
+              <button onclick="window.location.href='file:EditForm.html';" type="button" class="deletebtn">Delete</button>
+            </div>
+          </div>
+        </form>
+      </div>-->
+</body>
+</html>

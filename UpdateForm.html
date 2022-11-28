@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Update Form</title>
+    <link href="Css/StyleUpdate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user">
+                <div class="formBx">
+                <form method="post" action="php/signform.php">
+                    <h2>New Data</h2>
+                    <input type="text" name="username" placeholder="Username" />
+                    <input type="text" name="oldpass" placeholder="Old Password" />
+                    <input type="email" name="email" placeholder="Email Address" />
+                    <input type="password" name="password" placeholder="Create Password" />
+                    <input type="date" name=""/>
+                    <div class="radio">
+                    Gender: Male<input type="radio" name="gender"/>Female<input type="radio" name="gender"/>
+                    </div>
+                    <div class="button"> 
+                        <input onclick="window.location.href='file:EditForm.html';" type="submit" name="backToEdite" value="Back" />
+                        <input onclick="window.location.href='file:SignForms.html';" type="submit" name="submitupdate" value="Submit"/>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <script src="js/formScript.js"></script>
+
+</body>
+</html>
